@@ -210,7 +210,7 @@ function deleteClueDown(element){
 
 function addBlackTiles(){
 	addingBlackTiles = !addingBlackTiles;
-	(addingBlackTiles ? clickIcon.setAttribute("src", "./images/clickActive.png") : clickIcon.setAttribute("src", "./images/click.png"));
+	(addingBlackTiles ? clickIcon.setAttribute("src", "./icons/clickActive.png") : clickIcon.setAttribute("src", "./icons/click.png"));
 }
 
 function fill(){
@@ -317,7 +317,7 @@ function createClue(c, direction){
 	let container = document.createElement("div");
 	let clueNumber = document.createElement("span");
 	let deleteClue = document.createElement("img");
-	deleteClue.setAttribute("src", "./images/trash.png");
+	deleteClue.setAttribute("src", "./icons/trash.png");
 	deleteClue.style.height = "20px";
 	deleteClue.style.width = "20px";
 	deleteClue.style.marginLeft = "6px";
@@ -413,37 +413,37 @@ function handleOnMouseOut(element){
 	}
 }
 function trashMouseOver(){
-	trashIcon.setAttribute("src", "./images/trashHover.png");
+	trashIcon.setAttribute("src", "./icons/trashHover.png");
 }
 function trashMouseOut(){
-	trashIcon.setAttribute("src", "./images/trash.png");
+	trashIcon.setAttribute("src", "./icons/trash.png");
 }
 function checkMouseOver(){
-	checkIcon.setAttribute("src", "./images/checkHover.png");
+	checkIcon.setAttribute("src", "./icons/checkHover.png");
 }
 function checkMouseOut(){
-	checkIcon.setAttribute("src", "./images/check.png");
+	checkIcon.setAttribute("src", "./icons/check.png");
 }
 function fillMouseOver(){
-	fillIcon.setAttribute("src", "./images/fillHover.png");
+	fillIcon.setAttribute("src", "./icons/fillHover.png");
 }
 function fillMouseOut(){
-	fillIcon.setAttribute("src", "./images/fill.png");
+	fillIcon.setAttribute("src", "./icons/fill.png");
 }
 function clearMouseOver(){
-	clearIcon.setAttribute("src", "./images/clearHover.png");
+	clearIcon.setAttribute("src", "./icons/clearHover.png");
 }
 function clearMouseOut(){
-	clearIcon.setAttribute("src", "./images/clear.png");
+	clearIcon.setAttribute("src", "./icons/clear.png");
 }
 function clickMouseOver(){
-	clickIcon.setAttribute("src", "./images/clickHover.png");
+	clickIcon.setAttribute("src", "./icons/clickHover.png");
 }
 function clickMouseOut(){
 	if(addingBlackTiles){
-	clickIcon.setAttribute("src", "./images/clickActive.png");
+	clickIcon.setAttribute("src", "./icons/clickActive.png");
 	}else{
-		clickIcon.setAttribute("src", "./images/click.png");
+		clickIcon.setAttribute("src", "./icons/click.png");
 	}
 }
 function containerOnMouseOver(element){
