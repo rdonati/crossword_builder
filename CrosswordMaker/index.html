@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crossword Builder</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<h1 id = "header">Crossword Builder</h1>
+	<div id = "bodyContainer">
+		<div id = "leftPane">
+			<div id = "temp">
+				<div id = "dimensionSelect">
+					<span>Crossword Dimension</span>
+					<select id = "selectMenu" onchange="handleDimensionChange()"></select>
+				</div>
+				<div id = "iconAndCrosswordPane">
+					<div id = "iconPane">
+						<img src = "./images/trash.png" class = "icon" id = "trashIcon" onclick="resetCrossword()" onmouseover="trashMouseOver()" onmouseout="trashMouseOut()" style = "height: 40px; width: 40px;"/>
+						<img src = "./images/clear.png" class = "icon" id = "clearIcon" onclick="clearBlackTiles()" onmouseover="clearMouseOver()" onmouseout="clearMouseOut()" style = "height: 40px; width: 40px;"/>
+						<img src = "./images/fill.png" class = "icon" id = "fillIcon" onclick="fill()" onmouseover="fillMouseOver()" onmouseout="fillMouseOut()" style = "height: 40px; width: 40px;"/>
+						<img src = "./images/click.png" class = "icon" id = "clickIcon" onclick="addBlackTiles()" onmouseover="clickMouseOver()" onmouseout="clickMouseOut()" style = "height: 40px; width: 40px;"/>
+						<img src = "./images/check.png" class = "icon" id = "checkIcon" onclick="submitPuzzle()" onmouseover="checkMouseOver()" onmouseout="checkMouseOut()" style = "height: 40px; width: 40px;"/>
+					</div>
+					<table id = "crossword"/></table>
+				</div>
+			</div>
+		<div id = "clues">
+			<div id = "acrossElements">
+				<div id = "acrossHeader"><h2 style = "text-align: center;">Across</h2></div>
+				<div id = "across" style = "overflow-y: scroll; height: 500px;">
+				</div>
+			</div>
+			<div id = "downElements">
+				<div id = "downHeader"><h2 style = "text-align: center;">Down</h2></div>
+				<div id = "down" style = "overflow-y: scroll; height: 500px;">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

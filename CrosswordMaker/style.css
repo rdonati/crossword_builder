@@ -1,0 +1,86 @@
+		#bodyContainer{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		#leftPane{
+			display: flex;
+			flex-direction: row;
+			margin-right: 10%;
+			width: 50%;
+		}
+		#iconPane{
+			display: flex;
+			flex-direction: column;
+		}
+		body{
+			font-family: 'Roboto', sans-serif;
+			background-color: #eee;
+			font-size: medium;
+		}
+		#temp{
+			display: flex;
+			flex-direction: column;
+		}
+		#iconAndCrosswordPane{
+			display: flex;
+			flex-direction: row;
+		}
+		#header{
+			text-align: center;
+			border-bottom: 2px solid gray;
+		}
+		#crossword{
+			border-collapse: collapse;
+			border: 3px solid black;
+			border-radius: 30px;
+			table-layout: fixed;
+			width: 500px; 
+			box-shadow: 5px 5px 5px #ddd;	
+		}
+		tr, td{
+			padding: 0;
+			border: 1px solid grey;
+		}
+		td{
+			text-align: center;
+			margin-top: 20px;
+		}
+		#clues{
+			border: 1px solid gray;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px #ddd;
+			display: flex;
+			justify-content: flex-start;
+			margin-left: 10%;
+			background-color: white;
+		}
+		#down, #across{
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+		}
+		#dimensionSelect{
+			margin-bottom: 5%;
+		}
+		.icon{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-left: 10px;
+			margin-right: 10px;
+
+		}
+		#acrossHeader, #downHeader{
+			border-bottom: 1px solid black;
+		}
+		#acrossElements, #downElements{
+			display: flex;
+			flex-direction: column;
+		}
+		input[type=text]{
+			box-shadow: none;
+			outline: none;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			font-size: medium;
+		}
